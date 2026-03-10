@@ -1,0 +1,298 @@
+2026-02-16 22:11:36.930 +05:30 [INF] Saved 0 entities to in-memory store.
+2026-02-16 22:11:38.931 +05:30 [INF] Saved 2 entities to in-memory store.
+2026-02-16 22:11:39.028 +05:30 [INF] Saved 3 entities to in-memory store.
+2026-02-16 22:11:39.148 +05:30 [INF] Saved 3 entities to in-memory store.
+2026-02-16 22:11:39.463 +05:30 [INF] User profile is available. Using 'C:\Users\sadik_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-16 22:11:39.493 +05:30 [INF] Creating key {81417e34-2f83-4d6b-a543-e888b119f463} with creation date 2026-02-16 16:41:39Z, activation date 2026-02-16 16:41:39Z, and expiration date 2026-05-17 16:41:39Z.
+2026-02-16 22:11:39.544 +05:30 [INF] Writing data to file 'C:\Users\sadik_\AppData\Local\ASP.NET\DataProtection-Keys\key-81417e34-2f83-4d6b-a543-e888b119f463.xml'.
+2026-02-16 22:11:39.784 +05:30 [INF] Now listening on: http://localhost:5147
+2026-02-16 22:11:39.789 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-16 22:11:39.792 +05:30 [INF] Hosting environment: Development
+2026-02-16 22:11:39.795 +05:30 [INF] Content root path: C:\Users\sadik_\OneDrive\Desktop\TrainingManagement\src\TrainingManagement.API
+2026-02-16 22:11:49.953 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/ - null null
+2026-02-16 22:11:50.023 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-02-16 22:11:50.155 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/ - 404 0 null 204.0553ms
+2026-02-16 22:11:50.171 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5147/, Response status code: 404
+2026-02-16 22:11:58.437 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/ - null null
+2026-02-16 22:11:58.447 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/ - 404 0 null 9.556ms
+2026-02-16 22:11:58.458 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5147/, Response status code: 404
+2026-02-16 22:12:07.788 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger - null null
+2026-02-16 22:12:07.797 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger - 301 0 null 8.8935ms
+2026-02-16 22:12:07.807 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger/index.html - null null
+2026-02-16 22:12:07.954 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger/index.html - 200 null text/html;charset=utf-8 146.5373ms
+2026-02-16 22:12:07.991 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger/swagger-ui.css - null null
+2026-02-16 22:12:07.998 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger/swagger-ui-bundle.js - null null
+2026-02-16 22:12:08.000 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-16 22:12:08.033 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-02-16 22:12:08.033 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-02-16 22:12:08.040 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger/swagger-ui.css - 200 144929 text/css 48.5578ms
+2026-02-16 22:12:08.040 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 40.7988ms
+2026-02-16 22:12:08.046 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-02-16 22:12:08.059 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 60.8146ms
+2026-02-16 22:12:08.352 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger/v1/swagger.json - null null
+2026-02-16 22:12:08.395 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger/favicon-32x32.png - null null
+2026-02-16 22:12:08.401 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-02-16 22:12:08.404 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger/favicon-32x32.png - 200 628 image/png 9.0271ms
+2026-02-16 22:12:08.610 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 257.9594ms
+2026-02-16 22:13:40.463 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 50
+2026-02-16 22:13:40.485 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:13:40.505 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:13:40.513 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-02-16 22:13:40.552 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-02-16 22:13:41.207 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:13:41.290 +05:30 [INF] User admin logged in successfully
+2026-02-16 22:13:41.295 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Auth.AuthResponseDto'.
+2026-02-16 22:13:41.326 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 762.4031ms
+2026-02-16 22:13:41.329 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-02-16 22:13:41.336 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 200 null application/json; charset=utf-8 872.6612ms
+2026-02-16 22:14:45.983 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users - null null
+2026-02-16 22:14:46.003 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-02-16 22:14:46.014 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.User.UserDto]]] GetAllUsers() on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-02-16 22:14:46.021 +05:30 [INF] Authorization failed for the request at filter 'TrainingManagement.API.Attributes.AuthorizeAttribute'.
+2026-02-16 22:14:46.024 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-02-16 22:14:46.046 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API) in 27.1185ms
+2026-02-16 22:14:46.049 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-02-16 22:14:46.052 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users - 401 null application/problem+json; charset=utf-8 68.0067ms
+2026-02-16 22:15:07.163 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-02-16 22:15:07.168 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:15:07.176 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:15:07.185 +05:30 [INF] Authorization failed for the request at filter 'TrainingManagement.API.Attributes.AuthorizeAttribute'.
+2026-02-16 22:15:07.189 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-02-16 22:15:07.193 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 7.9819ms
+2026-02-16 22:15:07.196 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:15:07.199 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 401 null application/problem+json; charset=utf-8 36.375ms
+2026-02-16 22:15:40.354 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-02-16 22:15:40.361 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:15:40.364 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:15:40.368 +05:30 [INF] Authorization failed for the request at filter 'TrainingManagement.API.Attributes.AuthorizeAttribute'.
+2026-02-16 22:15:40.372 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-02-16 22:15:40.376 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 8.6346ms
+2026-02-16 22:15:40.379 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:15:40.380 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 401 null application/problem+json; charset=utf-8 26.8606ms
+2026-02-16 22:17:29.356 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 50
+2026-02-16 22:17:29.361 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:17:29.363 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:17:29.366 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-02-16 22:17:29.369 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-02-16 22:17:29.745 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:17:29.749 +05:30 [INF] User admin logged in successfully
+2026-02-16 22:17:29.751 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Auth.AuthResponseDto'.
+2026-02-16 22:17:29.754 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 379.0691ms
+2026-02-16 22:17:29.757 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-02-16 22:17:29.761 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 200 null application/json; charset=utf-8 405.0249ms
+2026-02-16 22:18:12.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-02-16 22:18:12.573 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:18:12.576 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:18:12.580 +05:30 [INF] Authorization failed for the request at filter 'TrainingManagement.API.Attributes.AuthorizeAttribute'.
+2026-02-16 22:18:12.582 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-02-16 22:18:12.584 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 4.0183ms
+2026-02-16 22:18:12.587 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:18:12.588 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 401 null application/problem+json; charset=utf-8 21.6334ms
+2026-02-16 22:21:08.385 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Trainings - application/json 220
+2026-02-16 22:21:08.392 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:21:08.394 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:21:08.396 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API)'
+2026-02-16 22:21:08.405 +05:30 [INF] Route matched with {action = "CreateTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Training.TrainingDto]] CreateTraining(TrainingManagement.Application.DTOs.Training.CreateTrainingDto) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:21:08.409 +05:30 [INF] Authorization failed for the request at filter 'TrainingManagement.API.Attributes.AuthorizeAttribute'.
+2026-02-16 22:21:08.414 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-02-16 22:21:08.417 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API) in 7.2339ms
+2026-02-16 22:21:08.419 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API)'
+2026-02-16 22:21:08.421 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Trainings - 401 null application/problem+json; charset=utf-8 35.3074ms
+2026-02-16 22:21:18.278 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Trainings - application/json 220
+2026-02-16 22:21:18.283 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:21:18.284 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:21:18.286 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API)'
+2026-02-16 22:21:18.288 +05:30 [INF] Route matched with {action = "CreateTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Training.TrainingDto]] CreateTraining(TrainingManagement.Application.DTOs.Training.CreateTrainingDto) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:21:18.295 +05:30 [INF] Authorization failed for the request at filter 'TrainingManagement.API.Attributes.AuthorizeAttribute'.
+2026-02-16 22:21:18.299 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-02-16 22:21:18.303 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API) in 8.0602ms
+2026-02-16 22:21:18.306 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API)'
+2026-02-16 22:21:18.309 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Trainings - 401 null application/problem+json; charset=utf-8 31.0993ms
+2026-02-16 22:21:28.852 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-02-16 22:21:28.857 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:21:28.859 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:21:28.880 +05:30 [INF] Authorization failed for the request at filter 'TrainingManagement.API.Attributes.AuthorizeAttribute'.
+2026-02-16 22:21:28.888 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-02-16 22:21:28.890 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 10.2118ms
+2026-02-16 22:21:28.893 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:21:28.897 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 401 null application/problem+json; charset=utf-8 44.794ms
+2026-02-16 22:24:44.665 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 50
+2026-02-16 22:24:44.669 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:24:44.670 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:24:44.673 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-02-16 22:24:44.677 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-02-16 22:24:45.002 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:24:45.005 +05:30 [INF] User admin logged in successfully
+2026-02-16 22:24:45.008 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Auth.AuthResponseDto'.
+2026-02-16 22:24:45.010 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 327.3555ms
+2026-02-16 22:24:45.013 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-02-16 22:24:45.016 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 200 null application/json; charset=utf-8 350.8909ms
+2026-02-16 22:26:16.108 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users - null null
+2026-02-16 22:26:16.196 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-02-16 22:26:16.198 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.User.UserDto]]] GetAllUsers() on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-02-16 22:26:16.256 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.User.UserDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-16 22:26:16.271 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API) in 68.4933ms
+2026-02-16 22:26:16.274 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-02-16 22:26:16.276 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users - 200 null application/json; charset=utf-8 167.8511ms
+2026-02-16 22:26:33.670 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users/2 - null null
+2026-02-16 22:26:33.678 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetUserById (TrainingManagement.API)'
+2026-02-16 22:26:33.688 +05:30 [INF] Route matched with {action = "GetUserById", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.User.UserDto]] GetUserById(Int32) on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-02-16 22:26:33.739 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.User.UserDto'.
+2026-02-16 22:26:33.743 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetUserById (TrainingManagement.API) in 49.233ms
+2026-02-16 22:26:33.746 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetUserById (TrainingManagement.API)'
+2026-02-16 22:26:33.748 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users/2 - 200 null application/json; charset=utf-8 77.5162ms
+2026-02-16 22:26:52.765 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-02-16 22:26:52.778 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:26:52.780 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:26:52.809 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-16 22:26:52.824 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 39.7669ms
+2026-02-16 22:26:52.827 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:26:52.829 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 64.2809ms
+2026-02-16 22:27:16.248 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings/3 - null null
+2026-02-16 22:27:16.255 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetTrainingById (TrainingManagement.API)'
+2026-02-16 22:27:16.264 +05:30 [INF] Route matched with {action = "GetTrainingById", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Training.TrainingDto]] GetTrainingById(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:27:16.289 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Training.TrainingDto'.
+2026-02-16 22:27:16.292 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetTrainingById (TrainingManagement.API) in 24.8926ms
+2026-02-16 22:27:16.295 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetTrainingById (TrainingManagement.API)'
+2026-02-16 22:27:16.297 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings/3 - 200 null application/json; charset=utf-8 48.7604ms
+2026-02-16 22:27:43.969 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Trainings - application/json 214
+2026-02-16 22:27:43.974 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:27:43.975 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:27:43.977 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API)'
+2026-02-16 22:27:43.979 +05:30 [INF] Route matched with {action = "CreateTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Training.TrainingDto]] CreateTraining(TrainingManagement.Application.DTOs.Training.CreateTrainingDto) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:27:44.046 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:27:44.048 +05:30 [INF] Training New Test Training created
+2026-02-16 22:27:44.051 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'TrainingManagement.Application.DTOs.Training.TrainingDto'.
+2026-02-16 22:27:44.081 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API) in 96.7394ms
+2026-02-16 22:27:44.084 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API)'
+2026-02-16 22:27:44.085 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Trainings - 201 null application/json; charset=utf-8 116.2728ms
+2026-02-16 22:28:07.419 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Dashboard - null null
+2026-02-16 22:28:07.427 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-02-16 22:28:07.435 +05:30 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto]] GetDashboard() on controller TrainingManagement.API.Controllers.DashboardController (TrainingManagement.API).
+2026-02-16 22:28:07.531 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto'.
+2026-02-16 22:28:07.540 +05:30 [INF] Executed action TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API) in 101.2694ms
+2026-02-16 22:28:07.543 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-02-16 22:28:07.545 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Dashboard - 200 null application/json; charset=utf-8 126.0762ms
+2026-02-16 22:28:53.084 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/my-trainings - null null
+2026-02-16 22:28:53.104 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetMyTrainings (TrainingManagement.API)'
+2026-02-16 22:28:53.113 +05:30 [INF] Route matched with {action = "GetMyTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetMyTrainings() on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-02-16 22:28:53.124 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-16 22:28:53.129 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetMyTrainings (TrainingManagement.API) in 11.8072ms
+2026-02-16 22:28:53.132 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetMyTrainings (TrainingManagement.API)'
+2026-02-16 22:28:53.133 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/my-trainings - 200 null application/json; charset=utf-8 49.8144ms
+2026-02-16 22:29:21.354 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Dashboard - null null
+2026-02-16 22:29:21.361 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-02-16 22:29:21.367 +05:30 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto]] GetDashboard() on controller TrainingManagement.API.Controllers.DashboardController (TrainingManagement.API).
+2026-02-16 22:29:21.385 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto'.
+2026-02-16 22:29:21.389 +05:30 [INF] Executed action TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API) in 8ms
+2026-02-16 22:29:21.395 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-02-16 22:29:21.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Dashboard - 200 null application/json; charset=utf-8 42.6604ms
+2026-02-16 22:30:27.985 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Trainings - application/json 237
+2026-02-16 22:30:27.990 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:30:27.991 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:30:28.009 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API)'
+2026-02-16 22:30:28.012 +05:30 [INF] Route matched with {action = "CreateTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Training.TrainingDto]] CreateTraining(TrainingManagement.Application.DTOs.Training.CreateTrainingDto) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:30:28.019 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:30:28.021 +05:30 [INF] Training Advanced Angular Development created
+2026-02-16 22:30:28.026 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'TrainingManagement.Application.DTOs.Training.TrainingDto'.
+2026-02-16 22:30:28.033 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API) in 16.6284ms
+2026-02-16 22:30:28.036 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.CreateTraining (TrainingManagement.API)'
+2026-02-16 22:30:28.038 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Trainings - 201 null application/json; charset=utf-8 52.6905ms
+2026-02-16 22:30:45.565 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-02-16 22:30:45.571 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:30:45.573 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:30:45.579 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-16 22:30:45.600 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 23.9496ms
+2026-02-16 22:30:45.609 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:30:45.612 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 47.2398ms
+2026-02-16 22:31:40.744 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users - null null
+2026-02-16 22:31:40.750 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-02-16 22:31:40.752 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.User.UserDto]]] GetAllUsers() on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-02-16 22:31:40.759 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.User.UserDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-16 22:31:40.784 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API) in 28.5198ms
+2026-02-16 22:31:40.786 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-02-16 22:31:40.792 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users - 200 null application/json; charset=utf-8 47.2498ms
+2026-02-16 22:32:11.551 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-02-16 22:32:11.557 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:32:11.559 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-02-16 22:32:11.584 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-16 22:32:11.589 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 6.8059ms
+2026-02-16 22:32:11.593 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-02-16 22:32:11.596 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 44.4265ms
+2026-02-16 22:33:59.656 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/UserTrainings/assign - application/json 36
+2026-02-16 22:33:59.718 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:33:59.721 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:33:59.724 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API)'
+2026-02-16 22:33:59.732 +05:30 [INF] Route matched with {action = "AssignTrainingToUser", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignTrainingToUser(TrainingManagement.Application.DTOs.UserTraining.AssignTrainingDto) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-02-16 22:33:59.778 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:33:59.782 +05:30 [INF] Training 4 assigned to User 2
+2026-02-16 22:33:59.789 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-16 22:33:59.795 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API) in 55.7171ms
+2026-02-16 22:33:59.797 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API)'
+2026-02-16 22:33:59.800 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/UserTrainings/assign - 200 null application/json; charset=utf-8 143.6299ms
+2026-02-16 22:34:21.016 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/UserTrainings/assign - application/json 36
+2026-02-16 22:34:21.020 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:34:21.021 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:34:21.024 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API)'
+2026-02-16 22:34:21.028 +05:30 [INF] Route matched with {action = "AssignTrainingToUser", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignTrainingToUser(TrainingManagement.Application.DTOs.UserTraining.AssignTrainingDto) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-02-16 22:34:21.044 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:34:21.048 +05:30 [INF] Training 5 assigned to User 2
+2026-02-16 22:34:21.050 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-16 22:34:21.057 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API) in 24.0087ms
+2026-02-16 22:34:21.060 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API)'
+2026-02-16 22:34:21.065 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/UserTrainings/assign - 200 null application/json; charset=utf-8 49.4657ms
+2026-02-16 22:34:24.561 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/UserTrainings/assign - application/json 36
+2026-02-16 22:34:24.565 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:34:24.566 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:34:24.569 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API)'
+2026-02-16 22:34:24.571 +05:30 [INF] Route matched with {action = "AssignTrainingToUser", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignTrainingToUser(TrainingManagement.Application.DTOs.UserTraining.AssignTrainingDto) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-02-16 22:34:24.578 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:34:24.579 +05:30 [INF] Training 6 assigned to User 2
+2026-02-16 22:34:24.582 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-16 22:34:24.588 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API) in 12.8349ms
+2026-02-16 22:34:24.591 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API)'
+2026-02-16 22:34:24.593 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/UserTrainings/assign - 200 null application/json; charset=utf-8 32.5948ms
+2026-02-16 22:35:03.028 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 52
+2026-02-16 22:35:03.033 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:35:03.034 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:35:03.037 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-02-16 22:35:03.039 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-02-16 22:35:03.360 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:35:03.363 +05:30 [INF] User john.doe logged in successfully
+2026-02-16 22:35:03.365 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Auth.AuthResponseDto'.
+2026-02-16 22:35:03.369 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 303.2469ms
+2026-02-16 22:35:03.373 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-02-16 22:35:03.376 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 200 null application/json; charset=utf-8 347.62ms
+2026-02-16 22:35:45.707 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Dashboard - null null
+2026-02-16 22:35:45.711 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-02-16 22:35:45.713 +05:30 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto]] GetDashboard() on controller TrainingManagement.API.Controllers.DashboardController (TrainingManagement.API).
+2026-02-16 22:35:45.760 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto'.
+2026-02-16 22:35:45.768 +05:30 [INF] Executed action TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API) in 50.3235ms
+2026-02-16 22:35:45.771 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-02-16 22:35:45.774 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Dashboard - 200 null application/json; charset=utf-8 67.4493ms
+2026-02-16 22:36:18.459 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/my-trainings - null null
+2026-02-16 22:36:18.464 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetMyTrainings (TrainingManagement.API)'
+2026-02-16 22:36:18.466 +05:30 [INF] Route matched with {action = "GetMyTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetMyTrainings() on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-02-16 22:36:18.472 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-16 22:36:18.497 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetMyTrainings (TrainingManagement.API) in 27.7198ms
+2026-02-16 22:36:18.501 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetMyTrainings (TrainingManagement.API)'
+2026-02-16 22:36:18.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/my-trainings - 200 null application/json; charset=utf-8 44.5823ms
+2026-02-16 22:37:06.412 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5147/api/UserTrainings/status - application/json 116
+2026-02-16 22:37:06.422 +05:30 [INF] CORS policy execution failed.
+2026-02-16 22:37:06.427 +05:30 [INF] Request origin http://localhost:5147 does not have permission to access the resource.
+2026-02-16 22:37:06.435 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.UpdateTrainingStatus (TrainingManagement.API)'
+2026-02-16 22:37:06.450 +05:30 [INF] Route matched with {action = "UpdateTrainingStatus", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTrainingStatus(TrainingManagement.Application.DTOs.UserTraining.UpdateTrainingStatusDto) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-02-16 22:37:06.472 +05:30 [INF] Saved 1 entities to in-memory store.
+2026-02-16 22:37:06.479 +05:30 [INF] Training status updated for UserTraining 4
+2026-02-16 22:37:06.481 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-16 22:37:06.484 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.UpdateTrainingStatus (TrainingManagement.API) in 30.618ms
+2026-02-16 22:37:06.486 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.UpdateTrainingStatus (TrainingManagement.API)'
+2026-02-16 22:37:06.489 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5147/api/UserTrainings/status - 200 null application/json; charset=utf-8 76.1999ms
+2026-02-16 22:37:33.614 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Dashboard - null null
+2026-02-16 22:37:33.619 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-02-16 22:37:33.621 +05:30 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto]] GetDashboard() on controller TrainingManagement.API.Controllers.DashboardController (TrainingManagement.API).
+2026-02-16 22:37:33.627 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto'.
+2026-02-16 22:37:33.632 +05:30 [INF] Executed action TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API) in 7.0399ms
+2026-02-16 22:37:33.637 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-02-16 22:37:33.640 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Dashboard - 200 null application/json; charset=utf-8 25.6915ms
+2026-02-16 22:43:46.130 +05:30 [INF] Application is shutting down...

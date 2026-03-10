@@ -1,0 +1,956 @@
+2026-03-10 19:01:18.078 +05:30 [INF] Applying migrations...
+2026-03-10 19:01:19.061 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-10 19:01:19.122 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-10 19:01:19.129 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-10 19:01:19.137 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-10 19:01:19.227 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-10 19:01:19.255 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-03-10 19:01:19.258 +05:30 [INF] Seeding database...
+2026-03-10 19:01:19.391 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-10 19:01:19.395 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-10 19:01:19.400 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-10 19:01:19.405 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-10 19:01:19.413 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-10 19:01:19.417 +05:30 [INF] No migrations were applied. The database is already up to date.
+2026-03-10 19:01:19.730 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:01:19.742 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trainings] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:01:19.753 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:01:19.756 +05:30 [INF] Database seeding completed successfully
+2026-03-10 19:01:19.760 +05:30 [INF] Database setup completed successfully
+2026-03-10 19:01:19.793 +05:30 [INF] User profile is available. Using 'C:\Users\sadik_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-10 19:01:19.924 +05:30 [INF] Now listening on: http://localhost:5147
+2026-03-10 19:01:19.926 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-10 19:01:19.927 +05:30 [INF] Hosting environment: Development
+2026-03-10 19:01:19.928 +05:30 [INF] Content root path: C:\Users\sadik_\OneDrive\文档\TrainingManagementApp\TrainingManagementAppBackEnd-\src\TrainingManagement.API
+2026-03-10 19:01:36.643 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/ - null null
+2026-03-10 19:01:36.696 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-03-10 19:01:36.739 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/ - 404 0 null 93.3825ms
+2026-03-10 19:01:36.745 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5147/, Response status code: 404
+2026-03-10 19:01:39.529 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger/index.html - null null
+2026-03-10 19:01:39.602 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger/index.html - 200 null text/html;charset=utf-8 72.6502ms
+2026-03-10 19:01:39.775 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/swagger/v1/swagger.json - null null
+2026-03-10 19:01:39.883 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.7532ms
+2026-03-10 19:01:52.244 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - null null
+2026-03-10 19:01:52.248 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:01:52.250 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - 204 null null 6.6108ms
+2026-03-10 19:01:52.254 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 41
+2026-03-10 19:01:52.258 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:01:52.262 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:01:52.280 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-03-10 19:01:52.500 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[@__userId_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:01:53.034 +05:30 [WRN] Failed login attempt for user Sadik
+2026-03-10 19:01:53.041 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-10 19:01:53.048 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 763.6921ms
+2026-03-10 19:01:53.049 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:01:53.053 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 401 null application/json; charset=utf-8 798.8658ms
+2026-03-10 19:01:57.685 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - null null
+2026-03-10 19:01:57.687 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:01:57.688 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - 204 null null 3.0038ms
+2026-03-10 19:01:57.691 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 41
+2026-03-10 19:01:57.693 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:01:57.697 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:01:57.698 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-03-10 19:01:57.707 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:01:57.830 +05:30 [WRN] Failed login attempt for user Sadik
+2026-03-10 19:01:57.832 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-10 19:01:57.834 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 133.952ms
+2026-03-10 19:01:57.835 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:01:57.836 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 401 null application/json; charset=utf-8 145.1275ms
+2026-03-10 19:02:03.125 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - null null
+2026-03-10 19:02:03.127 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:03.128 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - 204 null null 3.1645ms
+2026-03-10 19:02:03.130 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 40
+2026-03-10 19:02:03.133 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:03.134 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:02:03.135 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-03-10 19:02:03.141 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:02:03.384 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 100), @p2='?' (Size = 50), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [CreatedAt] = @p0, [Email] = @p1, [FirstName] = @p2, [IsActive] = @p3, [LastLoginAt] = @p4, [LastName] = @p5, [PasswordHash] = @p6, [Role] = @p7, [UserId] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2026-03-10 19:02:03.423 +05:30 [INF] User Sadik logged in successfully
+2026-03-10 19:02:03.425 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Auth.AuthResponseDto'.
+2026-03-10 19:02:03.434 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 297.3237ms
+2026-03-10 19:02:03.435 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:02:03.436 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 200 null application/json; charset=utf-8 305.3349ms
+2026-03-10 19:02:03.453 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:02:03.455 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:03.457 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 3.2531ms
+2026-03-10 19:02:03.459 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:02:03.461 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:03.503 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:02:03.507 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:02:03.525 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:02:03.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:02:03.564 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 55.7503ms
+2026-03-10 19:02:03.566 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:02:03.567 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 108.2846ms
+2026-03-10 19:02:08.773 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/1 - null null
+2026-03-10 19:02:08.775 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:08.776 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/1 - 204 null null 3.1334ms
+2026-03-10 19:02:08.779 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/Trainings/1 - null null
+2026-03-10 19:02:08.781 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:08.782 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:02:08.788 +05:30 [INF] Route matched with {action = "DeleteTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTraining(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:02:08.831 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:02:08.848 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[TrainingId] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:02:08.852 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-10 19:02:08.853 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API) in 63.2887ms
+2026-03-10 19:02:08.855 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:02:08.856 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/Trainings/1 - 400 null application/json; charset=utf-8 76.9547ms
+2026-03-10 19:02:12.585 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/3 - null null
+2026-03-10 19:02:12.587 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:12.588 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/3 - 204 null null 3.2241ms
+2026-03-10 19:02:12.591 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/Trainings/3 - null null
+2026-03-10 19:02:12.593 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:12.594 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:02:12.595 +05:30 [INF] Route matched with {action = "DeleteTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTraining(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:02:12.599 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:02:12.602 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[TrainingId] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:02:12.643 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Trainings]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-10 19:02:12.649 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:02:12.649 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API) in 53.1814ms
+2026-03-10 19:02:12.651 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:02:12.652 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/Trainings/3 - 204 null null 61.4971ms
+2026-03-10 19:02:12.656 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:02:12.658 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:12.658 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 2.7203ms
+2026-03-10 19:02:12.661 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:02:12.662 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:12.663 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:02:12.664 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:02:12.669 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:02:12.672 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:02:12.673 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 7.2414ms
+2026-03-10 19:02:12.674 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:02:12.675 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 14.0461ms
+2026-03-10 19:02:15.106 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/4 - null null
+2026-03-10 19:02:15.108 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:15.109 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/4 - 204 null null 3.5497ms
+2026-03-10 19:02:15.112 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/Trainings/4 - null null
+2026-03-10 19:02:15.116 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:15.117 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:02:15.119 +05:30 [INF] Route matched with {action = "DeleteTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTraining(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:02:15.124 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:02:15.129 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[TrainingId] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:02:15.130 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-10 19:02:15.132 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API) in 11.5869ms
+2026-03-10 19:02:15.133 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:02:15.134 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/Trainings/4 - 400 null application/json; charset=utf-8 21.4953ms
+2026-03-10 19:02:18.903 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Users - null null
+2026-03-10 19:02:18.904 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:02:18.905 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:18.907 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:18.907 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Users - 204 null null 4.7445ms
+2026-03-10 19:02:18.908 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 3.8047ms
+2026-03-10 19:02:18.910 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users - null null
+2026-03-10 19:02:18.912 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:02:18.914 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:18.915 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:18.917 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:02:18.917 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:02:18.918 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:02:18.920 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.User.UserDto]]] GetAllUsers() on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-03-10 19:02:18.922 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:02:18.924 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:02:18.925 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 5.4971ms
+2026-03-10 19:02:18.926 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:02:18.927 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 15.0955ms
+2026-03-10 19:02:18.931 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+2026-03-10 19:02:18.937 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.User.UserDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:02:18.940 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API) in 18.7657ms
+2026-03-10 19:02:18.942 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:02:18.942 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users - 200 null application/json; charset=utf-8 32.5559ms
+2026-03-10 19:02:21.533 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/user/2 - null null
+2026-03-10 19:02:21.536 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:21.537 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/user/2 - 204 null null 3.6393ms
+2026-03-10 19:02:21.539 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/2 - null null
+2026-03-10 19:02:21.543 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:21.544 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:02:21.547 +05:30 [INF] Route matched with {action = "GetUserTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetUserTrainings(Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:02:21.599 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:02:21.621 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:02:21.626 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API) in 76.7027ms
+2026-03-10 19:02:21.627 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:02:21.628 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/2 - 200 null application/json; charset=utf-8 88.3849ms
+2026-03-10 19:02:25.994 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/assign - null null
+2026-03-10 19:02:25.997 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:25.998 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/assign - 204 null null 3.4845ms
+2026-03-10 19:02:26.001 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/UserTrainings/assign - application/json 29
+2026-03-10 19:02:26.003 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:26.004 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API)'
+2026-03-10 19:02:26.007 +05:30 [INF] Route matched with {action = "AssignTrainingToUser", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignTrainingToUser(TrainingManagement.Application.DTOs.UserTraining.AssignTrainingDto) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:02:26.022 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__trainingId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[UserId] = @__userId_0 AND [u].[TrainingId] = @__trainingId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:02:26.075 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 500), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserTrainings] ([AssignedAt], [Comments], [ExpectedCompletionDate], [LastUpdatedAt], [Status], [TrainingId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-10 19:02:26.087 +05:30 [INF] Training 2 assigned to User 2
+2026-03-10 19:02:26.088 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-10 19:02:26.090 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API) in 80.5259ms
+2026-03-10 19:02:26.091 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.AssignTrainingToUser (TrainingManagement.API)'
+2026-03-10 19:02:26.091 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/UserTrainings/assign - 200 null application/json; charset=utf-8 90.9427ms
+2026-03-10 19:02:26.094 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/2 - null null
+2026-03-10 19:02:26.097 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:26.098 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:02:26.098 +05:30 [INF] Route matched with {action = "GetUserTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetUserTrainings(Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:02:26.103 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:02:26.106 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:02:26.107 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API) in 7.2119ms
+2026-03-10 19:02:26.109 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:02:26.110 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/2 - 200 null application/json; charset=utf-8 15.7137ms
+2026-03-10 19:02:37.222 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - null null
+2026-03-10 19:02:37.224 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:37.225 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - 204 null null 3.2619ms
+2026-03-10 19:02:37.229 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 43
+2026-03-10 19:02:37.231 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:37.231 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:02:37.232 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-03-10 19:02:37.240 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:02:37.372 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 100), @p2='?' (Size = 50), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [CreatedAt] = @p0, [Email] = @p1, [FirstName] = @p2, [IsActive] = @p3, [LastLoginAt] = @p4, [LastName] = @p5, [PasswordHash] = @p6, [Role] = @p7, [UserId] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2026-03-10 19:02:37.374 +05:30 [INF] User john.doe logged in successfully
+2026-03-10 19:02:37.375 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Auth.AuthResponseDto'.
+2026-03-10 19:02:37.376 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 142.1527ms
+2026-03-10 19:02:37.377 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:02:37.378 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 200 null application/json; charset=utf-8 148.7917ms
+2026-03-10 19:02:37.387 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Dashboard - null null
+2026-03-10 19:02:37.389 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:37.390 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Dashboard - 204 null null 2.818ms
+2026-03-10 19:02:37.394 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Dashboard - null null
+2026-03-10 19:02:37.396 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:37.398 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-03-10 19:02:37.402 +05:30 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto]] GetDashboard() on controller TrainingManagement.API.Controllers.DashboardController (TrainingManagement.API).
+2026-03-10 19:02:37.408 +05:30 [INF] ========== DASHBOARD DEBUG START ==========
+2026-03-10 19:02:37.409 +05:30 [INF] Getting dashboard for user ID: 2
+2026-03-10 19:02:37.425 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+2026-03-10 19:02:37.427 +05:30 [INF] User found: John Doe
+2026-03-10 19:02:37.444 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+2026-03-10 19:02:37.447 +05:30 [INF] RAW TRAININGS COUNT from repository: 2
+2026-03-10 19:02:37.449 +05:30 [INF] RAW TRAINING: ID=11, TrainingId=1, Status=Pending
+2026-03-10 19:02:37.450 +05:30 [INF] RAW TRAINING: ID=12, TrainingId=2, Status=Pending
+2026-03-10 19:02:37.454 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:02:37.458 +05:30 [INF] PROCESSED: TrainingId=1, Name='Cybersecurity'
+2026-03-10 19:02:37.458 +05:30 [INF] PROCESSED: TrainingId=2, Name='Data Privacy G'
+2026-03-10 19:02:37.459 +05:30 [INF] FINAL DASHBOARD - Total trainings: 2
+2026-03-10 19:02:37.460 +05:30 [INF] ========== DASHBOARD DEBUG END ==========
+2026-03-10 19:02:37.461 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto'.
+2026-03-10 19:02:37.463 +05:30 [INF] Executed action TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API) in 59.7881ms
+2026-03-10 19:02:37.465 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-03-10 19:02:37.466 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Dashboard - 200 null application/json; charset=utf-8 71.8965ms
+2026-03-10 19:02:44.314 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/status - null null
+2026-03-10 19:02:44.316 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:44.316 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/status - 204 null null 2.5408ms
+2026-03-10 19:02:44.319 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5147/api/UserTrainings/status - application/json 46
+2026-03-10 19:02:44.322 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:44.323 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.UpdateTrainingStatus (TrainingManagement.API)'
+2026-03-10 19:02:44.326 +05:30 [INF] Route matched with {action = "UpdateTrainingStatus", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTrainingStatus(TrainingManagement.Application.DTOs.UserTraining.UpdateTrainingStatusDto) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:02:44.335 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:02:44.348 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 500), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [UserTrainings] SET [AssignedAt] = @p0, [Comments] = @p1, [ExpectedCompletionDate] = @p2, [LastUpdatedAt] = @p3, [Status] = @p4, [TrainingId] = @p5, [UserId] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2026-03-10 19:02:44.351 +05:30 [INF] Training status updated for UserTraining 11
+2026-03-10 19:02:44.352 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-10 19:02:44.353 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.UpdateTrainingStatus (TrainingManagement.API) in 25.351ms
+2026-03-10 19:02:44.354 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.UpdateTrainingStatus (TrainingManagement.API)'
+2026-03-10 19:02:44.355 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5147/api/UserTrainings/status - 200 null application/json; charset=utf-8 35.7654ms
+2026-03-10 19:02:44.357 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Dashboard - null null
+2026-03-10 19:02:44.359 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:44.360 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Dashboard - 204 null null 2.2128ms
+2026-03-10 19:02:44.362 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Dashboard - null null
+2026-03-10 19:02:44.363 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:44.364 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-03-10 19:02:44.365 +05:30 [INF] Route matched with {action = "GetDashboard", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto]] GetDashboard() on controller TrainingManagement.API.Controllers.DashboardController (TrainingManagement.API).
+2026-03-10 19:02:44.367 +05:30 [INF] ========== DASHBOARD DEBUG START ==========
+2026-03-10 19:02:44.368 +05:30 [INF] Getting dashboard for user ID: 2
+2026-03-10 19:02:44.371 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__p_0
+2026-03-10 19:02:44.373 +05:30 [INF] User found: John Doe
+2026-03-10 19:02:44.377 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+2026-03-10 19:02:44.379 +05:30 [INF] RAW TRAININGS COUNT from repository: 2
+2026-03-10 19:02:44.380 +05:30 [INF] RAW TRAINING: ID=11, TrainingId=1, Status=Completed
+2026-03-10 19:02:44.380 +05:30 [INF] RAW TRAINING: ID=12, TrainingId=2, Status=Pending
+2026-03-10 19:02:44.382 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:02:44.383 +05:30 [INF] PROCESSED: TrainingId=1, Name='Cybersecurity'
+2026-03-10 19:02:44.384 +05:30 [INF] PROCESSED: TrainingId=2, Name='Data Privacy G'
+2026-03-10 19:02:44.385 +05:30 [INF] FINAL DASHBOARD - Total trainings: 2
+2026-03-10 19:02:44.385 +05:30 [INF] ========== DASHBOARD DEBUG END ==========
+2026-03-10 19:02:44.386 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Dashboard.UserDashboardDto'.
+2026-03-10 19:02:44.387 +05:30 [INF] Executed action TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API) in 20.6276ms
+2026-03-10 19:02:44.388 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.DashboardController.GetDashboard (TrainingManagement.API)'
+2026-03-10 19:02:44.388 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Dashboard - 200 null application/json; charset=utf-8 26.8022ms
+2026-03-10 19:02:55.519 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - null null
+2026-03-10 19:02:55.521 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:55.522 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Auth/login - 204 null null 2.7699ms
+2026-03-10 19:02:55.524 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5147/api/Auth/login - application/json 40
+2026-03-10 19:02:55.526 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:55.527 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:02:55.528 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TrainingManagement.Application.DTOs.Auth.AuthResponseDto]] Login(TrainingManagement.Application.DTOs.Auth.LoginDto) on controller TrainingManagement.API.Controllers.AuthController (TrainingManagement.API).
+2026-03-10 19:02:55.533 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:02:55.665 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 100), @p2='?' (Size = 50), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 50), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [CreatedAt] = @p0, [Email] = @p1, [FirstName] = @p2, [IsActive] = @p3, [LastLoginAt] = @p4, [LastName] = @p5, [PasswordHash] = @p6, [Role] = @p7, [UserId] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2026-03-10 19:02:55.668 +05:30 [INF] User Sadik logged in successfully
+2026-03-10 19:02:55.668 +05:30 [INF] Executing OkObjectResult, writing value of type 'TrainingManagement.Application.DTOs.Auth.AuthResponseDto'.
+2026-03-10 19:02:55.669 +05:30 [INF] Executed action TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API) in 140.3394ms
+2026-03-10 19:02:55.670 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.AuthController.Login (TrainingManagement.API)'
+2026-03-10 19:02:55.671 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5147/api/Auth/login - 200 null application/json; charset=utf-8 146.9068ms
+2026-03-10 19:02:55.692 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:02:55.694 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:55.695 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 2.6633ms
+2026-03-10 19:02:55.697 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:02:55.699 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:55.700 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:02:55.701 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:02:55.705 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:02:55.707 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:02:55.708 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 5.4456ms
+2026-03-10 19:02:55.709 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:02:55.710 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 12.8493ms
+2026-03-10 19:02:59.983 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/1 - null null
+2026-03-10 19:02:59.985 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:59.986 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/1 - 204 null null 2.4839ms
+2026-03-10 19:02:59.988 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/Trainings/1 - null null
+2026-03-10 19:02:59.990 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:02:59.991 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:02:59.991 +05:30 [INF] Route matched with {action = "DeleteTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTraining(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:02:59.995 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:03:00.000 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[TrainingId] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:03:00.003 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-10 19:03:00.005 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API) in 12.0788ms
+2026-03-10 19:03:00.006 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:00.007 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/Trainings/1 - 400 null application/json; charset=utf-8 19.3205ms
+2026-03-10 19:03:03.201 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Users - null null
+2026-03-10 19:03:03.201 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Users - null null
+2026-03-10 19:03:03.203 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:03.205 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:03.205 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Users - 204 null null 4.532ms
+2026-03-10 19:03:03.206 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Users - 204 null null 4.7966ms
+2026-03-10 19:03:03.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users - null null
+2026-03-10 19:03:03.212 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:03.213 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:03:03.215 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.User.UserDto]]] GetAllUsers() on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-03-10 19:03:03.222 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+2026-03-10 19:03:03.225 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.User.UserDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:03.227 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API) in 10.388ms
+2026-03-10 19:03:03.227 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users - null null
+2026-03-10 19:03:03.228 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:03:03.232 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:03.235 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users - 200 null application/json; charset=utf-8 24.7595ms
+2026-03-10 19:03:03.236 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:03:03.239 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/all - null null
+2026-03-10 19:03:03.240 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.User.UserDto]]] GetAllUsers() on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-03-10 19:03:03.242 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:03.244 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/all - 204 null null 4.6407ms
+2026-03-10 19:03:03.245 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+2026-03-10 19:03:03.246 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/all - null null
+2026-03-10 19:03:03.248 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.User.UserDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:03.250 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:03.251 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API) in 7.9261ms
+2026-03-10 19:03:03.252 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetAllUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:03.253 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:03:03.255 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users - 200 null application/json; charset=utf-8 27.8849ms
+2026-03-10 19:03:03.256 +05:30 [INF] Route matched with {action = "GetAllUserTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetAllUserTrainings() on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:03.261 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+2026-03-10 19:03:03.264 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:03.265 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetAllUserTrainings (TrainingManagement.API) in 6.0351ms
+2026-03-10 19:03:03.266 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetAllUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:03.267 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/all - 200 null application/json; charset=utf-8 20.7957ms
+2026-03-10 19:03:03.270 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/all - null null
+2026-03-10 19:03:03.272 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:03.273 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetAllUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:03.274 +05:30 [INF] Route matched with {action = "GetAllUserTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetAllUserTrainings() on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:03.277 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+2026-03-10 19:03:03.279 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:03.280 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetAllUserTrainings (TrainingManagement.API) in 4.8251ms
+2026-03-10 19:03:03.281 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetAllUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:03.282 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/all - 200 null application/json; charset=utf-8 12.0853ms
+2026-03-10 19:03:06.973 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:06.973 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users - null null
+2026-03-10 19:03:06.975 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:06.977 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:06.977 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 4.4448ms
+2026-03-10 19:03:06.978 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:03:06.980 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:06.981 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.User.UserDto]]] GetAllUsers() on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-03-10 19:03:06.983 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:06.986 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:06.987 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+2026-03-10 19:03:06.987 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:06.988 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.User.UserDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:06.991 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API) in 6.4103ms
+2026-03-10 19:03:06.991 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:03:06.991 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:03:06.993 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:06.994 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users - 200 null application/json; charset=utf-8 21.0401ms
+2026-03-10 19:03:06.996 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 6.1319ms
+2026-03-10 19:03:07.000 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:07.001 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 21.0067ms
+2026-03-10 19:03:09.415 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:09.417 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:09.418 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:09.419 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:09.423 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:03:09.424 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:09.426 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 4.883ms
+2026-03-10 19:03:09.427 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:09.427 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 12.0355ms
+2026-03-10 19:03:13.925 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/4 - null null
+2026-03-10 19:03:13.927 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:13.928 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/4 - 204 null null 2.3289ms
+2026-03-10 19:03:13.930 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5147/api/Trainings/4 - application/json 220
+2026-03-10 19:03:13.932 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:13.933 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.UpdateTraining (TrainingManagement.API)'
+2026-03-10 19:03:13.936 +05:30 [INF] Route matched with {action = "UpdateTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTraining(Int32, TrainingManagement.Application.DTOs.Training.UpdateTrainingDto) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:13.945 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:03:13.957 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Int32), @p5='?' (Size = 50), @p6='?' (Size = 100), @p7='?' (Size = 500), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Trainings] SET [CreatedAt] = @p0, [ExpectedEndDate] = @p1, [ExpectedStartDate] = @p2, [IsActive] = @p3, [Mode] = @p4, [Platform] = @p5, [TrainingName] = @p6, [TrainingUrl] = @p7, [UpdatedAt] = @p8
+OUTPUT 1
+WHERE [Id] = @p9;
+2026-03-10 19:03:13.960 +05:30 [INF] Training 4 updated
+2026-03-10 19:03:13.961 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:03:13.962 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.UpdateTraining (TrainingManagement.API) in 23.9206ms
+2026-03-10 19:03:13.963 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.UpdateTraining (TrainingManagement.API)'
+2026-03-10 19:03:13.964 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5147/api/Trainings/4 - 204 null null 33.9393ms
+2026-03-10 19:03:13.967 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:13.969 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:13.970 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 2.5496ms
+2026-03-10 19:03:13.972 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:13.974 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:13.975 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:13.976 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:13.978 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:03:13.980 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:13.981 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 3.9106ms
+2026-03-10 19:03:13.982 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:13.982 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 10.5422ms
+2026-03-10 19:03:16.154 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/4 - null null
+2026-03-10 19:03:16.155 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:16.156 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/4 - 204 null null 2.3ms
+2026-03-10 19:03:16.158 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/Trainings/4 - null null
+2026-03-10 19:03:16.160 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:16.161 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:16.162 +05:30 [INF] Route matched with {action = "DeleteTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTraining(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:16.166 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:03:16.169 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[TrainingId] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:03:16.171 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-10 19:03:16.173 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API) in 8.575ms
+2026-03-10 19:03:16.174 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:16.175 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/Trainings/4 - 400 null application/json; charset=utf-8 16.7449ms
+2026-03-10 19:03:20.270 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Users - null null
+2026-03-10 19:03:20.270 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:20.272 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:20.274 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:20.274 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Users - 204 null null 4.0999ms
+2026-03-10 19:03:20.275 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 4.6813ms
+2026-03-10 19:03:20.277 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:20.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Users - null null
+2026-03-10 19:03:20.281 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:20.283 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:20.284 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:20.284 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:03:20.285 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:20.286 +05:30 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.User.UserDto]]] GetAllUsers() on controller TrainingManagement.API.Controllers.UsersController (TrainingManagement.API).
+2026-03-10 19:03:20.289 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:03:20.290 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:20.292 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 4.7172ms
+2026-03-10 19:03:20.293 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:20.294 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 16.6157ms
+2026-03-10 19:03:20.298 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastLoginAt], [u].[LastName], [u].[PasswordHash], [u].[Role], [u].[UserId]
+FROM [Users] AS [u]
+2026-03-10 19:03:20.300 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.User.UserDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:20.301 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API) in 12.4144ms
+2026-03-10 19:03:20.302 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UsersController.GetAllUsers (TrainingManagement.API)'
+2026-03-10 19:03:20.303 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Users - 200 null application/json; charset=utf-8 23.6784ms
+2026-03-10 19:03:23.597 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/user/2 - null null
+2026-03-10 19:03:23.599 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:23.599 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/user/2 - 204 null null 2.3596ms
+2026-03-10 19:03:23.601 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/2 - null null
+2026-03-10 19:03:23.604 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:23.605 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:23.606 +05:30 [INF] Route matched with {action = "GetUserTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetUserTrainings(Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:23.609 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:03:23.611 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:23.612 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API) in 5.0679ms
+2026-03-10 19:03:23.613 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:23.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/2 - 200 null application/json; charset=utf-8 12.7199ms
+2026-03-10 19:03:25.977 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/remove/2/1 - null null
+2026-03-10 19:03:25.977 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/remove/2/2 - null null
+2026-03-10 19:03:25.979 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:25.980 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:25.981 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/remove/2/1 - 204 null null 3.8242ms
+2026-03-10 19:03:25.982 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/remove/2/2 - 204 null null 4.264ms
+2026-03-10 19:03:25.984 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/UserTrainings/remove/2/1 - null null
+2026-03-10 19:03:25.986 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/UserTrainings/remove/2/2 - null null
+2026-03-10 19:03:25.988 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:25.990 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:25.991 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API)'
+2026-03-10 19:03:25.991 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API)'
+2026-03-10 19:03:25.994 +05:30 [INF] Route matched with {action = "RemoveTrainingFromUser", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveTrainingFromUser(Int32, Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:25.995 +05:30 [INF] Route matched with {action = "RemoveTrainingFromUser", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveTrainingFromUser(Int32, Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:26.012 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__trainingId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+WHERE [u].[UserId] = @__userId_0 AND [u].[TrainingId] = @__trainingId_1
+2026-03-10 19:03:26.012 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__trainingId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+WHERE [u].[UserId] = @__userId_0 AND [u].[TrainingId] = @__trainingId_1
+2026-03-10 19:03:26.022 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [UserTrainings]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-10 19:03:26.022 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [UserTrainings]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-10 19:03:26.025 +05:30 [INF] Training 1 removed from User 2
+2026-03-10 19:03:26.025 +05:30 [INF] Training 2 removed from User 2
+2026-03-10 19:03:26.026 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:03:26.027 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:03:26.027 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API) in 31.9884ms
+2026-03-10 19:03:26.028 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API) in 31.0693ms
+2026-03-10 19:03:26.029 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API)'
+2026-03-10 19:03:26.030 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API)'
+2026-03-10 19:03:26.030 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/UserTrainings/remove/2/1 - 204 null null 46.3749ms
+2026-03-10 19:03:26.031 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/UserTrainings/remove/2/2 - 204 null null 44.9804ms
+2026-03-10 19:03:26.035 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/2 - null null
+2026-03-10 19:03:26.037 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:26.038 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:26.038 +05:30 [INF] Route matched with {action = "GetUserTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetUserTrainings(Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:26.042 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:03:26.044 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:26.045 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API) in 5.4243ms
+2026-03-10 19:03:26.046 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:26.047 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/2 - 200 null application/json; charset=utf-8 11.8332ms
+2026-03-10 19:03:27.598 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/user/4 - null null
+2026-03-10 19:03:27.600 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:27.601 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/user/4 - 204 null null 2.7535ms
+2026-03-10 19:03:27.603 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/4 - null null
+2026-03-10 19:03:27.605 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:27.606 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:27.607 +05:30 [INF] Route matched with {action = "GetUserTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetUserTrainings(Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:27.610 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:03:27.612 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:27.613 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API) in 4.8307ms
+2026-03-10 19:03:27.614 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:27.615 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/4 - 200 null application/json; charset=utf-8 11.9821ms
+2026-03-10 19:03:29.647 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/remove/4/2 - null null
+2026-03-10 19:03:29.647 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/remove/4/4 - null null
+2026-03-10 19:03:29.649 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:29.650 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:29.651 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/remove/4/2 - 204 null null 3.7743ms
+2026-03-10 19:03:29.651 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/UserTrainings/remove/4/4 - 204 null null 4.054ms
+2026-03-10 19:03:29.653 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/UserTrainings/remove/4/2 - null null
+2026-03-10 19:03:29.655 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/UserTrainings/remove/4/4 - null null
+2026-03-10 19:03:29.657 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:29.658 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:29.659 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API)'
+2026-03-10 19:03:29.659 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API)'
+2026-03-10 19:03:29.660 +05:30 [INF] Route matched with {action = "RemoveTrainingFromUser", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveTrainingFromUser(Int32, Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:29.661 +05:30 [INF] Route matched with {action = "RemoveTrainingFromUser", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveTrainingFromUser(Int32, Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:29.664 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__trainingId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+WHERE [u].[UserId] = @__userId_0 AND [u].[TrainingId] = @__trainingId_1
+2026-03-10 19:03:29.664 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__trainingId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+WHERE [u].[UserId] = @__userId_0 AND [u].[TrainingId] = @__trainingId_1
+2026-03-10 19:03:29.668 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [UserTrainings]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-10 19:03:29.669 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [UserTrainings]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-10 19:03:29.670 +05:30 [INF] Training 2 removed from User 4
+2026-03-10 19:03:29.672 +05:30 [INF] Training 4 removed from User 4
+2026-03-10 19:03:29.672 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:03:29.673 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:03:29.674 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API) in 11.9279ms
+2026-03-10 19:03:29.674 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API) in 11.0101ms
+2026-03-10 19:03:29.675 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API)'
+2026-03-10 19:03:29.676 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.RemoveTrainingFromUser (TrainingManagement.API)'
+2026-03-10 19:03:29.677 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/UserTrainings/remove/4/2 - 204 null null 24.1047ms
+2026-03-10 19:03:29.678 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/UserTrainings/remove/4/4 - 204 null null 23.1047ms
+2026-03-10 19:03:29.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/4 - null null
+2026-03-10 19:03:29.685 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:29.686 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:29.686 +05:30 [INF] Route matched with {action = "GetUserTrainings", controller = "UserTrainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto]]] GetUserTrainings(Int32) on controller TrainingManagement.API.Controllers.UserTrainingsController (TrainingManagement.API).
+2026-03-10 19:03:29.689 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[AssignedAt], [u].[Comments], [u].[ExpectedCompletionDate], [u].[LastUpdatedAt], [u].[Status], [u].[TrainingId], [u].[UserId], [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt], [u0].[Id], [u0].[CreatedAt], [u0].[Email], [u0].[FirstName], [u0].[IsActive], [u0].[LastLoginAt], [u0].[LastName], [u0].[PasswordHash], [u0].[Role], [u0].[UserId]
+FROM [UserTrainings] AS [u]
+INNER JOIN [Trainings] AS [t] ON [u].[TrainingId] = [t].[Id]
+INNER JOIN [Users] AS [u0] ON [u].[UserId] = [u0].[Id]
+WHERE [u].[UserId] = @__userId_0
+2026-03-10 19:03:29.691 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.UserTraining.UserTrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:29.693 +05:30 [INF] Executed action TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API) in 4.7963ms
+2026-03-10 19:03:29.694 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.UserTrainingsController.GetUserTrainings (TrainingManagement.API)'
+2026-03-10 19:03:29.694 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/UserTrainings/user/4 - 200 null application/json; charset=utf-8 11.6985ms
+2026-03-10 19:03:31.591 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:31.593 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:31.593 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 2.3256ms
+2026-03-10 19:03:31.595 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:31.597 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:31.598 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:31.599 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:31.601 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:03:31.604 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:31.605 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 4.5933ms
+2026-03-10 19:03:31.606 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:31.606 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 11.1343ms
+2026-03-10 19:03:33.751 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/1 - null null
+2026-03-10 19:03:33.753 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:33.754 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/1 - 204 null null 2.6102ms
+2026-03-10 19:03:33.756 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/Trainings/1 - null null
+2026-03-10 19:03:33.758 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:33.759 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:33.760 +05:30 [INF] Route matched with {action = "DeleteTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTraining(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:33.763 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:03:33.765 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[TrainingId] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:03:33.770 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Trainings]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-10 19:03:33.772 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:03:33.773 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API) in 11.3612ms
+2026-03-10 19:03:33.774 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:33.775 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/Trainings/1 - 204 null null 18.2301ms
+2026-03-10 19:03:33.778 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:33.779 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:33.780 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:33.781 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:33.783 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:03:33.785 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:33.786 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 4.1254ms
+2026-03-10 19:03:33.788 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:33.788 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 10.7418ms
+2026-03-10 19:03:35.787 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/2 - null null
+2026-03-10 19:03:35.789 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:35.789 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/2 - 204 null null 2.5285ms
+2026-03-10 19:03:35.791 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/Trainings/2 - null null
+2026-03-10 19:03:35.793 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:35.794 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:35.794 +05:30 [INF] Route matched with {action = "DeleteTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTraining(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:35.797 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:03:35.799 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[TrainingId] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:03:35.802 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Trainings]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-10 19:03:35.804 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:03:35.804 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API) in 8.7123ms
+2026-03-10 19:03:35.805 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:35.806 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/Trainings/2 - 204 null null 15.0048ms
+2026-03-10 19:03:35.810 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:35.811 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:35.812 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:35.813 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:35.815 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:03:35.817 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:35.818 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 3.8975ms
+2026-03-10 19:03:35.819 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:35.820 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 10.8859ms
+2026-03-10 19:03:37.853 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/4 - null null
+2026-03-10 19:03:37.855 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:37.856 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings/4 - 204 null null 2.6047ms
+2026-03-10 19:03:37.858 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5147/api/Trainings/4 - null null
+2026-03-10 19:03:37.860 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:37.861 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:37.862 +05:30 [INF] Route matched with {action = "DeleteTraining", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTraining(Int32) on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:37.864 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+WHERE [t].[Id] = @__p_0
+2026-03-10 19:03:37.866 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserTrainings] AS [u]
+        WHERE [u].[TrainingId] = @__id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-10 19:03:37.869 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Trainings]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-10 19:03:37.871 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-10 19:03:37.872 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API) in 8.8343ms
+2026-03-10 19:03:37.873 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.DeleteTraining (TrainingManagement.API)'
+2026-03-10 19:03:37.874 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5147/api/Trainings/4 - 204 null null 15.6258ms
+2026-03-10 19:03:37.876 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:37.878 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:37.878 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 2.4367ms
+2026-03-10 19:03:37.881 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:37.882 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:37.883 +05:30 [INF] Executing endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:37.884 +05:30 [INF] Route matched with {action = "GetAllTrainings", controller = "Trainings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TrainingManagement.Application.DTOs.Training.TrainingDto]]] GetAllTrainings() on controller TrainingManagement.API.Controllers.TrainingsController (TrainingManagement.API).
+2026-03-10 19:03:37.886 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[ExpectedEndDate], [t].[ExpectedStartDate], [t].[IsActive], [t].[Mode], [t].[Platform], [t].[TrainingName], [t].[TrainingUrl], [t].[UpdatedAt]
+FROM [Trainings] AS [t]
+2026-03-10 19:03:37.889 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TrainingManagement.Application.DTOs.Training.TrainingDto, TrainingManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-10 19:03:37.890 +05:30 [INF] Executed action TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API) in 4.59ms
+2026-03-10 19:03:37.891 +05:30 [INF] Executed endpoint 'TrainingManagement.API.Controllers.TrainingsController.GetAllTrainings (TrainingManagement.API)'
+2026-03-10 19:03:37.892 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5147/api/Trainings - 200 null application/json; charset=utf-8 11.1863ms
+2026-03-10 19:03:43.407 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - null null
+2026-03-10 19:03:43.409 +05:30 [INF] CORS policy execution successful.
+2026-03-10 19:03:43.410 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5147/api/Trainings - 204 null null 2.815ms
+2026-03-10 19:04:43.266 +05:30 [INF] Application is shutting down...

@@ -1,0 +1,15 @@
+using System;
+using System.Threading.Tasks;
+
+namespace TrainingManagement.Domain.Interfaces;
+
+public interface IUnitOfWork : IDisposable
+{
+    IUserRepository Users { get; }
+    ITrainingRepository Trainings { get; }
+    IUserTrainingRepository UserTrainings { get; }
+    Task<int> CompleteAsync();
+    Task BeginTransactionAsync();
+    Task CommitTransactionAsync();
+    Task RollbackTransactionAsync();
+}

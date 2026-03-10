@@ -1,0 +1,29 @@
+# Angular
+/node_modules
+/dist
+/tmp
+/out-tsc
+*.log
+*.pid
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files
+/environments/*.local.ts
+/environments/*.prod.ts
+
+# Test coverage
+/coverage
+
+# System files
+.DS_Store
+Thumbs.db
