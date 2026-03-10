@@ -1,4 +1,4 @@
-### Hello Everyone! This Application is a Full Stack Application to Track the Status of each Training Assigned to a Student.
+### Hello Everyone! This Application is a Full Stack Application to Track the Status of each Training Assigned to a User.
 
 ## This app has two ways to login
 1. User Login
