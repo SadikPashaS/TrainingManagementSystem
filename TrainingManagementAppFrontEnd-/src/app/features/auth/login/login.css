@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  position: relative;
+}
+
+/* Header Icons - Now side by side on the right */
+.header-icons {
+  display: flex;
+  justify-content: flex-end;  /* Aligns icons to the right */
+  align-items: center;
+  gap: 15px;  /* Space between icons */
+  padding: 15px 25px;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #1c1e21;
+  font-weight: 400;
+}
+
+.profile-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #1c1e21;
+}
+
+/* Login Box */
+.login-box {
+  background: white;
+  padding: 30px 40px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+  margin: 30px auto;
+}
+
+.login-box h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1c1e21;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #606770;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccd0d5;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease-in-out;
+  height: 35px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+.form-control::placeholder {
+  color: #9a9a9a;
+  font-size: 13px;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 5px 0 15px 0;
+  transition: background-color 0.2s;
+  height: 38px;
+}
+
+.btn-login:hover {
+  background-color: #166fe5;
+}
+
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  position: relative;
+  color: #65676b;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #dadde1;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.btn-sso {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.2s;
+  height: 38px;
+}
+
+.btn-sso:hover {
+  background-color: #166fe5;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password a {
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .header-icons {
+    padding: 12px 20px;
+    gap: 12px;
+  }
+  
+  .login-box {
+    margin: 20px auto;
+    padding: 25px 20px;
+    max-width: 90%;
+  }
+  
+  .login-box h2 {
+    font-size: 24px;
+  }
+  
+  .menu-icon, .profile-icon {
+    font-size: 18px;
+  }
+}
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+  font-size: 14px;
+}

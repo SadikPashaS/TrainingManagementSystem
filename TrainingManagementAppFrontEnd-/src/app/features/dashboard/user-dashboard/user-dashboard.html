@@ -1,0 +1,135 @@
+<div class="dashboard-container">
+  <!-- Welcome Message -->
+  <div class="welcome-section">
+    <h2>Welcome, {{ userName }}!</h2>
+  </div>
+
+  <!-- Stats Cards -->
+  <div class="stats-container">
+    <div class="stat-card blue">
+      <div class="stat-label">Pending:</div>
+      <div class="stat-value">{{ pendingCount }}</div>
+    </div>
+    
+    <div class="stat-card red">
+      <div class="stat-label">In Progress</div>
+      <div class="stat-value">{{ inProgressCount }}</div>
+    </div>
+    
+    <div class="stat-card yellow">
+      <div class="stat-label">Delayed</div>
+      <div class="stat-value">{{ delayedCount }}</div>
+    </div>
+    
+    <div class="stat-card green">
+      <div class="stat-label">Completed</div>
+      <div class="stat-value">{{ completedCount }}</div>
+    </div>
+  </div>
+
+  <!-- My Trainings Section -->
+  <div class="trainings-section">
+    <h3>My Trainings</h3>
+    
+    <!-- Loading State -->
+    <div *ngIf="loading" class="loading-container">
+      <div class="spinner"></div>
+      <p>Loading your trainings...</p>
+    </div>
+
+    <!-- Trainings List -->
+    <div *ngIf="!loading && trainings.length > 0" class="trainings-list">
+      <div *ngFor="let training of trainings" class="training-item">
+        <span class="training-name">{{ training.trainingName }}</span>
+        <div class="training-right">
+          <span class="training-status" [ngClass]="getStatusClass(training.status)">
+            {{ getStatusText(training.status) }}
+          </span>
+          <button class="arrow-btn" type="button" (click)="openStatusPopup($event, training)">→</button>
+        </div>
+        <div class="training-comments" *ngIf="training.comments">
+           {{ training.comments }}
+        </div>
+      </div>
+    </div>
+    
+    <!-- Empty State -->
+    <div *ngIf="!loading && trainings.length === 0" class="empty-state">
+      <p>No trainings assigned yet.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SINGLE POPUP - Use only this one -->
+<div class="popup-overlay" *ngIf="showPopup" (click)="closePopup()" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; z-index: 999999;">
+  <div class="popup-content" (click)="$event.stopPropagation()" style="background: white; border-radius: 8px; width: 90%; max-width: 450px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+    
+    <!-- Popup Header -->
+    <div class="popup-header" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; border-bottom: 1px solid #e9ecef;">
+      <h3 style="margin: 0; font-size: 18px; font-weight: 600; color: #1c1e21;">Update Training Status</h3>
+      <button class="close-btn" (click)="closePopup()" style="background: none; border: none; font-size: 20px; cursor: pointer; color: #6c757d;">✕</button>
+    </div>
+
+    <!-- Popup Body -->
+    <div class="popup-body" style="padding: 20px;">
+      <!-- Training Name Display -->
+      <div class="training-info" style="margin-bottom: 20px; padding: 12px 15px; background-color: #f8f9fa; border-radius: 4px; border-left: 4px solid #1877f2;">
+        <strong style="color: #495057;">Training:</strong> {{ selectedTraining?.trainingName }}
+      </div>
+
+      <!-- Status Options -->
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label style="display: block; margin-bottom: 10px; font-weight: 500; color: #495057;">Status:</label>
+        <div class="status-options" style="display: flex; flex-direction: column; gap: 12px;">
+          <div *ngFor="let option of statusOptions" class="status-option" style="display: flex; align-items: center; gap: 10px;">
+            <input 
+              type="radio" 
+              [value]="option.value"
+              [checked]="selectedStatus === option.value"
+              (change)="selectedStatus = option.value"
+              [id]="'status_' + option.value"
+              name="status"
+              style="width: 18px; height: 18px; cursor: pointer; accent-color: #1877f2;">
+            <label [for]="'status_' + option.value" style="cursor: pointer; color: #1c1e21; font-size: 15px;">{{ option.label }}</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expected Completion Date - Only for Delayed -->
+      <div class="form-group" *ngIf="selectedStatus === 3" style="margin-bottom: 20px;">
+        <label for="expectedDate" style="display: block; margin-bottom: 10px; font-weight: 500; color: #495057;">
+          Expected Completion Date <span style="color: #dc3545;">*</span>
+        </label>
+        <input 
+          type="date" 
+          class="form-control" 
+          id="expectedDate"
+          [(ngModel)]="expectedCompletionDate"
+          style="width: 100%; padding: 10px 12px; border: 1px solid #ced4da; border-radius: 4px; font-size: 14px;">
+        <small *ngIf="selectedStatus === 3 && !expectedCompletionDate" style="color: #dc3545; font-size: 12px; margin-top: 5px; display: block;">
+          This field is required for Delayed status
+        </small>
+      </div>
+
+      <!-- Comments Box -->
+      <div class="form-group" style="margin-bottom: 20px;">
+        <label for="comments" style="display: block; margin-bottom: 10px; font-weight: 500; color: #495057;">Comments:</label>
+        <textarea 
+          class="form-control" 
+          id="comments"
+          rows="4"
+          [(ngModel)]="comments"
+          placeholder="Enter your comments here..."
+          style="width: 100%; padding: 10px 12px; border: 1px solid #ced4da; border-radius: 4px; font-size: 14px; resize: vertical; min-height: 100px;"></textarea>
+      </div>
+    </div>
+
+    <!-- Popup Footer -->
+    <div class="popup-footer" style="display: flex; gap: 10px; padding: 15px 20px; border-top: 1px solid #e9ecef;">
+      <button class="btn-cancel" (click)="closePopup()" style="flex: 1; padding: 10px; background-color: #6c757d; color: white; border: none; border-radius: 4px; font-size: 14px; cursor: pointer;">Cancel</button>
+      <button class="btn-save" (click)="saveStatus()" [disabled]="isSaveDisabled()" style="flex: 1; padding: 10px; background-color: #1877f2; color: white; border: none; border-radius: 4px; font-size: 14px; cursor: pointer;">
+        {{ saving ? 'Saving...' : 'Save' }}
+      </button>
+    </div>
+  </div>
+</div>

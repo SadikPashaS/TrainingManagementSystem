@@ -1,0 +1,66 @@
+<!-- Admin Navbar -->
+<nav class="admin-navbar" *ngIf="isAdminUser">
+  <div class="nav-container">
+    <div class="nav-left">
+      <span class="nav-title">Admin Training Management</span>
+    </div>
+    
+    <div class="nav-right">
+      <span class="user-name">Welcome, {{ userName }}</span>
+      <div class="dropdown">
+        <button class="dropbtn" (click)="toggleMenu()">
+          ☰
+        </button>
+        <div class="dropdown-content" *ngIf="showDropdown">
+          <!-- Show Training Management only if NOT on that page -->
+          <a *ngIf="!isTrainingManagementPage()" 
+             routerLink="/admin/trainings" 
+             (click)="closeMenu()">
+             Training Management
+          </a>
+          
+          <!-- Show User Overview only if NOT on that page -->
+          <a *ngIf="!isUserOverviewPage()" 
+             routerLink="/admin/users" 
+             (click)="closeMenu()">
+            👥 User Trainings Overview
+          </a>
+          
+          <!-- Show Assignments only if NOT on that page -->
+          <a *ngIf="!isAssignmentsPage()" 
+             routerLink="/admin/assignments" 
+             (click)="closeMenu()">
+            🔗 Manage User Assignments
+          </a>
+          
+          <!-- Show divider only if at least one option is shown -->
+          <div class="divider" *ngIf="showAnyOption()"></div>
+          
+          <!-- Logout always visible -->
+          <a (click)="logout(); closeMenu()"> Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- User Navbar (unchanged) -->
+<nav class="user-navbar" *ngIf="!isAdminUser">
+  <div class="nav-container">
+    <div class="nav-left">
+      <span class="nav-title">User Dashboard</span>
+    </div>
+    
+    <div class="nav-right">
+      <span class="user-name">Welcome, {{ userName }}</span>
+      <div class="dropdown">
+        <button class="dropbtn" (click)="toggleMenu()">
+          👤
+        </button>
+        <div class="dropdown-content" *ngIf="showDropdown">
+          <a (click)="logout(); closeMenu()">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

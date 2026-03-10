@@ -1,0 +1,64 @@
+<div class="assignments-container">
+  <!-- Header without dropdown menu -->
+  <div class="header">
+    <h2>Manage User Assignments</h2>
+  </div>
+
+  <div class="assignments-content">
+    <!-- User Selection -->
+    <div class="user-selection">
+      <label>Select User:</label>
+      <select class="form-control" [(ngModel)]="selectedUserId" (change)="onUserChange()">
+        <option value="">-- Select User --</option>
+        <option *ngFor="let user of users" [value]="user.id">
+          {{ user.firstName }} {{ user.lastName }} ({{ user.userId }})
+        </option>
+      </select>
+    </div>
+
+    <!-- Assignments Section -->
+    <div class="assignments-section" *ngIf="selectedUserId">
+      <div class="row">
+        <!-- Assigned Trainings -->
+        <div class="col">
+          <h4>Assigned Trainings</h4>
+          <div class="training-list assigned">
+            <div *ngFor="let training of assignedTrainings" class="training-item">
+              <span>{{ training.trainingName }}</span>
+              <button class="btn-remove" (click)="removeTraining(training)">
+                Remove
+              </button>
+            </div>
+            <div *ngIf="assignedTrainings.length === 0" class="empty-list">
+              No trainings assigned
+            </div>
+          </div>
+        </div>
+
+        <!-- Available Trainings -->
+        <div class="col">
+          <h4>Available Trainings</h4>
+          <div class="training-list available">
+            <div *ngFor="let training of availableTrainings" class="training-item">
+              <span>{{ training.trainingName }}</span>
+              <button class="btn-add" (click)="addTraining(training)">
+                Add
+              </button>
+            </div>
+            <div *ngIf="availableTrainings.length === 0" class="empty-list">
+              No trainings available
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="btn-cancel" (click)="cancelAssignments()">Cancel</button>
+        <button class="btn-save" (click)="saveAssignments()" [disabled]="loading">
+          {{ loading ? 'Saving...' : 'Save Changes' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,166 @@
+<div class="admin-container">
+  <div class="header">
+    <h2>Admin Training Management</h2>
+    <button class="btn-add" (click)="openAddModal()">
+      + Add Training
+    </button>
+  </div>
+
+  <!-- Trainings Table -->
+  <div class="table-container">
+    <table class="trainings-table">
+      <thead>
+        <tr>
+          <th>Training Name</th>
+          <th>Mode</th>
+          <th>Platform</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let training of trainings">
+          <td>{{ training.trainingName }}</td>
+          <td>
+            <span class="badge" [ngClass]="getModeClass(training.mode)">
+              {{ getModeText(training.mode) }}
+            </span>
+          </td>
+          <td>{{ training.platform }}</td>
+          <td>{{ training.expectedStartDate | date:'MM/dd/yyyy' }}</td>
+          <td>{{ training.expectedEndDate | date:'MM/dd/yyyy' }}</td>
+          <td class="actions">
+            <button class="btn-edit" (click)="openEditModal(training)">
+               Edit
+            </button>
+            <button class="btn-delete" (click)="deleteTraining(training.id)">
+               Delete
+            </button>
+          </td>
+        </tr>
+        <tr *ngIf="trainings.length === 0">
+          <td colspan="6" class="no-data">No trainings found. Click "Add Training" to create one.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Add/Edit Modal -->
+  <div class="modal" *ngIf="showModal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h3>{{ editMode ? 'Edit Training' : 'Add New Training' }}</h3>
+        <button class="btn-close" (click)="closeModal()">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <form #trainingForm="ngForm">
+          <div class="form-group">
+            <label>Training Name <span class="required">*</span></label>
+            <input 
+              type="text" 
+              class="form-control" 
+              [(ngModel)]="formData.trainingName" 
+              name="trainingName"
+              #trainingName="ngModel"
+              required>
+            <div class="error-message" *ngIf="trainingName.invalid && trainingName.touched">
+              Training name is required
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Training URL <span class="required">*</span></label>
+            <input 
+              type="url" 
+              class="form-control" 
+              [(ngModel)]="formData.trainingUrl" 
+              name="trainingUrl"
+              #trainingUrl="ngModel"
+              required
+              pattern="https?://.+">
+            <div class="error-message" *ngIf="trainingUrl.invalid && trainingUrl.touched">
+              Valid URL is required (must start with http:// or https://)
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Mode <span class="required">*</span></label>
+            <select 
+              class="form-control" 
+              [(ngModel)]="formData.mode" 
+              name="mode"
+              #mode="ngModel"
+              required>
+              <option value="1">Instructor-Led</option>
+              <option value="2">Virtual</option>
+            </select>
+            <div class="error-message" *ngIf="mode.invalid && mode.touched">
+              Mode is required
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Platform <span class="required">*</span></label>
+            <input 
+              type="text" 
+              class="form-control" 
+              [(ngModel)]="formData.platform" 
+              name="platform"
+              #platform="ngModel"
+              required>
+            <div class="error-message" *ngIf="platform.invalid && platform.touched">
+              Platform is required
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Start Date <span class="required">*</span></label>
+              <input 
+                type="date" 
+                class="form-control" 
+                [(ngModel)]="formData.expectedStartDate" 
+                name="startDate"
+                #startDate="ngModel"
+                required>
+              <div class="error-message" *ngIf="startDate.invalid && startDate.touched">
+                Start date is required
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>End Date <span class="required">*</span></label>
+              <input 
+                type="date" 
+                class="form-control" 
+                [(ngModel)]="formData.expectedEndDate" 
+                name="endDate"
+                #endDate="ngModel"
+                required>
+              
+              <!-- DATE VALIDATION MESSAGE - NEW -->
+              <div *ngIf="formData.expectedStartDate && formData.expectedEndDate && 
+                          formData.expectedEndDate < formData.expectedStartDate" 
+                   class="date-error-message">
+                 End date cannot be before start date
+              </div>
+              
+              <div class="error-message" *ngIf="endDate.invalid && endDate.touched">
+                End date is required
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-cancel" (click)="closeModal()">Cancel</button>
+        <button class="btn-save" (click)="saveTraining()" [disabled]="!trainingForm.form.valid">
+          {{ editMode ? 'Update' : 'Save' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

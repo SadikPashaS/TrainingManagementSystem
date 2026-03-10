@@ -1,0 +1,7 @@
+<!-- Only show navbar when NOT on login page -->
+<app-navbar *ngIf="router.url !== '/login'"></app-navbar>
+
+<!-- Main Content -->
+<div class="container-fluid p-0">
+  <router-outlet></router-outlet>
+</div>

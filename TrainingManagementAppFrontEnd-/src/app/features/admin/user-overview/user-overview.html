@@ -1,0 +1,54 @@
+<div class="overview-container">
+  <div class="header">
+    <h2>User Training Overview</h2>
+  </div>
+
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-container">
+    <div class="spinner"></div>
+    <p>Loading user trainings...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="!loading && errorMessage" class="error-container">
+    <p class="error-message">{{ errorMessage }}</p>
+    <button class="btn-retry" (click)="loadUserTrainings()">Try Again</button>
+  </div>
+
+  <!-- Data Table -->
+  <div *ngIf="!loading && !errorMessage && userTrainings.length > 0" class="table-container">
+    <table class="overview-table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Training</th>
+          <th>Status</th>
+          <th>Completion Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of userTrainings">
+          <td>{{ getUserDisplayName(item) }}</td>
+          <td>{{ item.trainingName || 'Unknown Training' }}</td>
+          <td>
+            <span class="status-badge" [ngClass]="getStatusClass(item.status)">
+              {{ getStatusText(item.status) }}
+            </span>
+          </td>
+          <td>{{ item.expectedCompletionDate ? (item.expectedCompletionDate | date:'MM/dd/yyyy') : '-' }}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!-- Summary -->
+    <div class="summary">
+      <strong>Total Records:</strong> {{ userTrainings.length }}
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div *ngIf="!loading && !errorMessage && userTrainings.length === 0" class="empty-state">
+    <p>No training assignments found.</p>
+    <p class="hint">Assign trainings to users in the "Manage User Assignments" section.</p>
+  </div>
+</div>
